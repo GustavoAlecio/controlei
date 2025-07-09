@@ -1,0 +1,37 @@
+name: controlei
+
+packages:
+  - apps/**
+  - packages/**
+
+scripts:
+  analyze:
+    exec: dart analyze .
+
+  format:
+    run: |
+      melos exec -- \
+        dart format .
+  runner:
+    run: |
+      melos exec --depends-on="build_runner" -- \
+        flutter pub run build_runner build --delete-conflicting-outputs
+
+  clean:
+    run: melos exec -- flutter clean
+
+  test:
+    run: melos exec --depends-on="test" -- flutter test --coverage
+    description: Run all Flutter tests.
+    select-package:
+      depends-on: flutter
+      dir-exists: test
+
+  check:
+    run: |
+      melos run format
+      melos run analyze
+      melos run test
+
+  upgrade:
+    run: melos exec -- flutter pub upgrade

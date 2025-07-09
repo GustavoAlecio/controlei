@@ -1,0 +1,10 @@
+# melos_managed_dependency_overrides: accounts,core,dependencies,design_system
+dependency_overrides:
+  accounts:
+    path: ../../packages/accounts
+  core:
+    path: ../../packages/core
+  dependencies:
+    path: ../../packages/dependencies
+  design_system:
+    path: ../../packages/design_system
