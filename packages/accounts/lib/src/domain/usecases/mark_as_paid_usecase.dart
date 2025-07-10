@@ -1,9 +1,10 @@
 import 'package:core/core.dart';
 
+import '../entities/entities.dart';
 import '../repositories/account_repository.dart';
 
 abstract interface class IMarkAsPaidUseCase {
-  Future<Either<Failure, void>> call(String id);
+  Future<Either<Failure, Account>> call(String id);
 }
 
 final class MarkAsPaidUseCase implements IMarkAsPaidUseCase {
@@ -12,7 +13,7 @@ final class MarkAsPaidUseCase implements IMarkAsPaidUseCase {
   MarkAsPaidUseCase(this._repository);
 
   @override
-  Future<Either<Failure, void>> call(String id) async {
+  Future<Either<Failure, Account>> call(String id) async {
     return await _repository.markAsPaid(id);
   }
 }

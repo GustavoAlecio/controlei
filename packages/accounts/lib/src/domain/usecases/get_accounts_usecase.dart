@@ -14,6 +14,10 @@ final class GetAccountsUseCase implements IGetAccountsUseCase {
 
   @override
   Future<Either<Failure, List<Account>>> call() async {
-    return await _repository.getAll();
+    final result = await _repository.getAll();
+    return result.fold((failure) => Left(failure), (accounts) {
+      accounts.sort((a, b) => a.dueDate.compareTo(b.dueDate));
+      return Right(accounts);
+    });
   }
 }

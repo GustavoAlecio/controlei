@@ -1,3 +1,4 @@
+import 'package:core/core.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:accounts/src/domain/domain.dart';
 
@@ -29,12 +30,12 @@ void main() {
     test('should update fields using copyWith', () {
       final account = Account(
         dueDate: DateTime(2025, 7, 1),
-        amount: 100.0,
+        amount: Amount(100),
       );
 
       final updated = account.copyWith(
         name: 'Electricity Bill',
-        amount: 150.0,
+        amount: Amount(100),
         status: PaymentStatus.paid,
       );
 

@@ -1,5 +1,6 @@
 import 'package:accounts/account_providers.dart';
 import 'package:accounts/src/domain/domain.dart';
+import 'package:core/core.dart';
 import 'package:dependencies/dependencies.dart';
 import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
@@ -32,13 +33,14 @@ class _AddAccountViewState extends ConsumerState<AddAccountView> {
     _categoryController.dispose();
     super.dispose();
   }
+  
 
   void _submit() async {
     if (!_formKey.currentState!.validate() || _dueDate == null) return;
-
+    final amount = Amount.fromText(_moneyController.text);
     final account = Account(
       name: _nameController.text,
-      amount: double.tryParse(_moneyController.text) ?? 0.0,
+      amount: amount,
       type: type,
       installmentInfo: type == AccountType.installment
           ? InstallmentInfo(

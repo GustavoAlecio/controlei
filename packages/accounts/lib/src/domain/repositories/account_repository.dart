@@ -11,6 +11,6 @@ abstract interface class IAccountRepository {
   Future<Either<Failure, void>> createAccount(Account account);
   Future<Either<Failure, void>> updateAccount(Account account);
   Future<Either<Failure, void>> deleteAccount(String id);
-  Future<Either<Failure, void>> markAsPaid(String id);
+  Future<Either<Failure, Account>> markAsPaid(String id);
 
 }

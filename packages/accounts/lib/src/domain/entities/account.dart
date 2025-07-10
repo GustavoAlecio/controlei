@@ -1,3 +1,4 @@
+import 'package:core/core.dart';
 import 'package:dependencies/dependencies.dart';
 
 import './enums/enums.dart';
@@ -8,10 +9,10 @@ part 'account.freezed.dart';
 @freezedNoHelpers
 sealed class Account with _$Account {
   const Account._();
-  const factory Account({
+   factory Account({
     @Default('') String id,
     @Default('') String name,
-    @Default(0) double amount,
+    @Default(Amount.zero) Amount amount,
     required DateTime dueDate,
     @Default(AccountType.single) AccountType type,
     @Default(InstallmentInfo()) InstallmentInfo installmentInfo,

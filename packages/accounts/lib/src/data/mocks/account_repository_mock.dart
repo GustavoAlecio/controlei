@@ -67,13 +67,13 @@ final class AccountRepositoryMock implements IAccountRepository {
   }
 
   @override
-  Future<Either<Failure, void>> markAsPaid(String id) async {
+  Future<Either<Failure, Account>> markAsPaid(String id) async {
     try {
       final index = _storage.indexWhere((a) => a.id == id);
       if (index != -1) {
         _storage[index] = _storage[index].copyWith(status: PaymentStatus.paid);
       }
-      return const Right(null);
+      return Right(_storage[index]);
     } catch (e, s) {
       final failure = Failure.fromException(e, s);
       LoggerService().error(failure.message, error: e, stackTrace: s);
@@ -99,9 +99,8 @@ final class AccountRepositoryMock implements IAccountRepository {
   @override
   Future<Either<Failure, List<String>>> getCategories() async {
     try {
-      Set<String> set = {};
-      _storage.map((item) => set.add(item.category));
-      return Right(set.toList());
+      final categories = _storage.map((e) => e.category).toSet().toList();
+      return Right(categories);
     } catch (e, s) {
       final failure = Failure.fromException(e, s);
       LoggerService().error(failure.message, error: e, stackTrace: s);

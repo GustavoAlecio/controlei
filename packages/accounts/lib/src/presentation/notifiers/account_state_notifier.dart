@@ -8,16 +8,19 @@ final accountsProvider =
   (ref) => AccountsNotifier(
     ref.watch(getAccountsUseCaseProvider),
     ref.watch(getCategoriesUseCaseProvider),
+    ref.watch(markAsPaiUseCaseProvider),
   ),
 );
 
 class AccountsNotifier extends StateNotifier<AsyncValue<AccountState>> {
   final IGetAccountsUseCase _getAccountsUseCase;
   final IGetCategoriesUseCase _getCategoriesUseCase;
+  final IMarkAsPaidUseCase _markAsPaidUseCase;
 
   AccountsNotifier(
     this._getAccountsUseCase,
     this._getCategoriesUseCase,
+    this._markAsPaidUseCase,
   ) : super(const AsyncLoading()) {
     load();
   }
@@ -44,8 +47,21 @@ class AccountsNotifier extends StateNotifier<AsyncValue<AccountState>> {
     );
   }
 
-  List<String> get allCategories =>
-      state is AsyncData ? (state as AsyncData).value.categories : [];
+  Future<void> markAsPaid(String id) async {
+    final result = await _markAsPaidUseCase.call(id);
+
+    state = result.fold(
+          (failure) => state,
+          (updatedAccount) {
+        final currentState = state.value!;
+        final updatedAccounts = currentState.accounts.map((acc) {
+          return acc.id == id ? updatedAccount : acc;
+        }).toList();
+
+        return AsyncData(currentState.copyWith(accounts: updatedAccounts));
+      },
+    );
+  }
 
   List<Account> accountsByCategory(String category) => state is AsyncData
       ? (state as AsyncData)

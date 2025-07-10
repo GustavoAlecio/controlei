@@ -18,7 +18,7 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$Account {
   String get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  double get amount => throw _privateConstructorUsedError;
+  Amount get amount => throw _privateConstructorUsedError;
   DateTime get dueDate => throw _privateConstructorUsedError;
   AccountType get type => throw _privateConstructorUsedError;
   InstallmentInfo get installmentInfo => throw _privateConstructorUsedError;
@@ -39,7 +39,7 @@ abstract class $AccountCopyWith<$Res> {
   $Res call(
       {String id,
       String name,
-      double amount,
+      Amount amount,
       DateTime dueDate,
       AccountType type,
       InstallmentInfo installmentInfo,
@@ -85,7 +85,7 @@ class _$AccountCopyWithImpl<$Res, $Val extends Account>
       amount: null == amount
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
-              as double,
+              as Amount,
       dueDate: null == dueDate
           ? _value.dueDate
           : dueDate // ignore: cast_nullable_to_non_nullable
@@ -130,7 +130,7 @@ abstract class _$$AccountImplCopyWith<$Res> implements $AccountCopyWith<$Res> {
   $Res call(
       {String id,
       String name,
-      double amount,
+      Amount amount,
       DateTime dueDate,
       AccountType type,
       InstallmentInfo installmentInfo,
@@ -175,7 +175,7 @@ class __$$AccountImplCopyWithImpl<$Res>
       amount: null == amount
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
-              as double,
+              as Amount,
       dueDate: null == dueDate
           ? _value.dueDate
           : dueDate // ignore: cast_nullable_to_non_nullable
@@ -203,10 +203,10 @@ class __$$AccountImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$AccountImpl extends _Account {
-  const _$AccountImpl(
+  _$AccountImpl(
       {this.id = '',
       this.name = '',
-      this.amount = 0,
+      this.amount = Amount.zero,
       required this.dueDate,
       this.type = AccountType.single,
       this.installmentInfo = const InstallmentInfo(),
@@ -222,7 +222,7 @@ class _$AccountImpl extends _Account {
   final String name;
   @override
   @JsonKey()
-  final double amount;
+  final Amount amount;
   @override
   final DateTime dueDate;
   @override
@@ -274,23 +274,23 @@ class _$AccountImpl extends _Account {
 }
 
 abstract class _Account extends Account {
-  const factory _Account(
+  factory _Account(
       {final String id,
       final String name,
-      final double amount,
+      final Amount amount,
       required final DateTime dueDate,
       final AccountType type,
       final InstallmentInfo installmentInfo,
       final String category,
       final PaymentStatus status}) = _$AccountImpl;
-  const _Account._() : super._();
+  _Account._() : super._();
 
   @override
   String get id;
   @override
   String get name;
   @override
-  double get amount;
+  Amount get amount;
   @override
   DateTime get dueDate;
   @override
