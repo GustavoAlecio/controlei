@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'installment_info.dart';
+part of 'installment_info_model.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,39 +14,41 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
+InstallmentInfoModel _$InstallmentInfoModelFromJson(Map<String, dynamic> json) {
+  return _InstallmentInfoModel.fromJson(json);
+}
+
 /// @nodoc
-mixin _$InstallmentInfo {
+mixin _$InstallmentInfoModel {
   int? get current => throw _privateConstructorUsedError;
   int? get total => throw _privateConstructorUsedError;
 
-  /// Create a copy of InstallmentInfo
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $InstallmentInfoCopyWith<InstallmentInfo> get copyWith =>
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $InstallmentInfoModelCopyWith<InstallmentInfoModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $InstallmentInfoCopyWith<$Res> {
-  factory $InstallmentInfoCopyWith(
-          InstallmentInfo value, $Res Function(InstallmentInfo) then) =
-      _$InstallmentInfoCopyWithImpl<$Res, InstallmentInfo>;
+abstract class $InstallmentInfoModelCopyWith<$Res> {
+  factory $InstallmentInfoModelCopyWith(InstallmentInfoModel value,
+          $Res Function(InstallmentInfoModel) then) =
+      _$InstallmentInfoModelCopyWithImpl<$Res, InstallmentInfoModel>;
   @useResult
   $Res call({int? current, int? total});
 }
 
 /// @nodoc
-class _$InstallmentInfoCopyWithImpl<$Res, $Val extends InstallmentInfo>
-    implements $InstallmentInfoCopyWith<$Res> {
-  _$InstallmentInfoCopyWithImpl(this._value, this._then);
+class _$InstallmentInfoModelCopyWithImpl<$Res,
+        $Val extends InstallmentInfoModel>
+    implements $InstallmentInfoModelCopyWith<$Res> {
+  _$InstallmentInfoModelCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of InstallmentInfo
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -67,33 +69,31 @@ class _$InstallmentInfoCopyWithImpl<$Res, $Val extends InstallmentInfo>
 }
 
 /// @nodoc
-abstract class _$$InstallmentInfoImplCopyWith<$Res>
-    implements $InstallmentInfoCopyWith<$Res> {
-  factory _$$InstallmentInfoImplCopyWith(_$InstallmentInfoImpl value,
-          $Res Function(_$InstallmentInfoImpl) then) =
-      __$$InstallmentInfoImplCopyWithImpl<$Res>;
+abstract class _$$InstallmentInfoModelImplCopyWith<$Res>
+    implements $InstallmentInfoModelCopyWith<$Res> {
+  factory _$$InstallmentInfoModelImplCopyWith(_$InstallmentInfoModelImpl value,
+          $Res Function(_$InstallmentInfoModelImpl) then) =
+      __$$InstallmentInfoModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? current, int? total});
 }
 
 /// @nodoc
-class __$$InstallmentInfoImplCopyWithImpl<$Res>
-    extends _$InstallmentInfoCopyWithImpl<$Res, _$InstallmentInfoImpl>
-    implements _$$InstallmentInfoImplCopyWith<$Res> {
-  __$$InstallmentInfoImplCopyWithImpl(
-      _$InstallmentInfoImpl _value, $Res Function(_$InstallmentInfoImpl) _then)
+class __$$InstallmentInfoModelImplCopyWithImpl<$Res>
+    extends _$InstallmentInfoModelCopyWithImpl<$Res, _$InstallmentInfoModelImpl>
+    implements _$$InstallmentInfoModelImplCopyWith<$Res> {
+  __$$InstallmentInfoModelImplCopyWithImpl(_$InstallmentInfoModelImpl _value,
+      $Res Function(_$InstallmentInfoModelImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of InstallmentInfo
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? current = freezed,
     Object? total = freezed,
   }) {
-    return _then(_$InstallmentInfoImpl(
+    return _then(_$InstallmentInfoModelImpl(
       current: freezed == current
           ? _value.current
           : current // ignore: cast_nullable_to_non_nullable
@@ -107,9 +107,12 @@ class __$$InstallmentInfoImplCopyWithImpl<$Res>
 }
 
 /// @nodoc
+@JsonSerializable()
+class _$InstallmentInfoModelImpl extends _InstallmentInfoModel {
+  const _$InstallmentInfoModelImpl({this.current, this.total}) : super._();
 
-class _$InstallmentInfoImpl extends _InstallmentInfo {
-  const _$InstallmentInfoImpl({this.current, this.total}) : super._();
+  factory _$InstallmentInfoModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$InstallmentInfoModelImplFromJson(json);
 
   @override
   final int? current;
@@ -118,45 +121,52 @@ class _$InstallmentInfoImpl extends _InstallmentInfo {
 
   @override
   String toString() {
-    return 'InstallmentInfo(current: $current, total: $total)';
+    return 'InstallmentInfoModel(current: $current, total: $total)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$InstallmentInfoImpl &&
+            other is _$InstallmentInfoModelImpl &&
             (identical(other.current, current) || other.current == current) &&
             (identical(other.total, total) || other.total == total));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, current, total);
 
-  /// Create a copy of InstallmentInfo
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$InstallmentInfoImplCopyWith<_$InstallmentInfoImpl> get copyWith =>
-      __$$InstallmentInfoImplCopyWithImpl<_$InstallmentInfoImpl>(
-          this, _$identity);
+  _$$InstallmentInfoModelImplCopyWith<_$InstallmentInfoModelImpl>
+      get copyWith =>
+          __$$InstallmentInfoModelImplCopyWithImpl<_$InstallmentInfoModelImpl>(
+              this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$InstallmentInfoModelImplToJson(
+      this,
+    );
+  }
 }
 
-abstract class _InstallmentInfo extends InstallmentInfo {
-  const factory _InstallmentInfo({final int? current, final int? total}) =
-      _$InstallmentInfoImpl;
-  const _InstallmentInfo._() : super._();
+abstract class _InstallmentInfoModel extends InstallmentInfoModel {
+  const factory _InstallmentInfoModel({final int? current, final int? total}) =
+      _$InstallmentInfoModelImpl;
+  const _InstallmentInfoModel._() : super._();
+
+  factory _InstallmentInfoModel.fromJson(Map<String, dynamic> json) =
+      _$InstallmentInfoModelImpl.fromJson;
 
   @override
   int? get current;
   @override
   int? get total;
-
-  /// Create a copy of InstallmentInfo
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$InstallmentInfoImplCopyWith<_$InstallmentInfoImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  _$$InstallmentInfoModelImplCopyWith<_$InstallmentInfoModelImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

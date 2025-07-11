@@ -10,6 +10,9 @@
       <excludeFolder url="file://$MODULE_DIR$/packages/accounts/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/packages/accounts/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/packages/accounts/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/local_storage/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/local_storage/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/local_storage/build" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />

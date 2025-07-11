@@ -1,4 +1,4 @@
-import 'package:accounts/accounts.dart';
+import 'package:core/core.dart';
 
 extension PaymentStatusExtensions on PaymentStatus {
   String get name => switch (this) {

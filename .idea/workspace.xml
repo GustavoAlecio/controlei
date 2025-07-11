@@ -5,26 +5,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="725080df-3c47-4e98-a99a-149ae9718340" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/widgets/account_card.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/widgets/widgets.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/core/lib/src/data/infrastructure/failure/value_failure.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/domain.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/value_object/amount.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/value_object/value_object.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/accounts/lib/src/data/datasources/account_datasource.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/accounts/lib/src/data/datasources/datasources.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/accounts/lib/src/data/repositories/account_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/accounts/lib/src/data/repositories/repositories.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/core/lib/core_providers.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/core/lib/src/data/infrastructure/storage/local_storage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/core/lib/src/data/infrastructure/storage/storage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/core/lib/src/data/models/account_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/core/lib/src/data/models/enums/account_type_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/core/lib/src/data/models/enums/enums.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/core/lib/src/data/models/enums/payment_status_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/core/lib/src/data/models/installment_info_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/core/lib/src/data/models/models.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/local_storage/lib/src/data/data.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/finances/lib/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/apps/finances/lib/home_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/data/mocks/account_repository_mock.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/data/mocks/account_repository_mock.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/account.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/account.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/account.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/account.freezed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/finances/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/apps/finances/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/finances/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/apps/finances/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/finances/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/apps/finances/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/finances/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/apps/finances/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/finances/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/apps/finances/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/finances/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/finances/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/finances/pubspec_overrides.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/finances/pubspec_overrides.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/finances/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/apps/finances/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/finances/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/apps/finances/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melos_controlei.iml" beforeDir="false" afterPath="$PROJECT_DIR$/melos_controlei.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/account_providers.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/account_providers.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/data/data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/data/data.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/domain.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/domain/domain.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/account.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/entities/account.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/account.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/entities/account.freezed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/account_filter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/entities/account_filter.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/account_filter.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/entities/account_filter.freezed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/entities.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/entities/entities.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/enums/account_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/entities/enums/account_type.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/enums/enums.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/entities/enums/enums.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/enums/payment_status.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/entities/enums/payment_status.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/installment_info.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/entities/installment_info.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/entities/installment_info.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/entities/installment_info.freezed.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/repositories/account_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/domain/repositories/account_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/usecases/create_account_usecase.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/domain/usecases/create_account_usecase.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/usecases/get_accounts_by_filter_usecase.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/domain/usecases/get_accounts_by_filter_usecase.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/usecases/get_accounts_usecase.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/domain/usecases/get_accounts_usecase.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/usecases/mark_as_paid_usecase.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/domain/usecases/mark_as_paid_usecase.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/notifiers/account_state_notifier.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/notifiers/account_state_notifier.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/presentation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/presentation.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/domain/usecases/update_account_usecase.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/domain/usecases/update_account_usecase.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/extensions/account_type_extension.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/extensions/account_type_extension.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/extensions/payment_status_extensions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/extensions/payment_status_extensions.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/notifiers/account_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/notifiers/account_state.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/views/create_account_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/views/create_account_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/widgets/account_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/lib/src/presentation/widgets/account_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/test/mocks/mocks.mocks.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/test/mocks/mocks.mocks.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/test/src/domain/entities/account_filter_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/test/src/domain/entities/account_filter_test.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/accounts/test/src/domain/entities/account_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/test/src/domain/entities/account_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/lib/src/data/infrastructure/failure/failure.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/data/infrastructure/failure/failure.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/lib/src/src.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/src.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/test/src/domain/entities/installment_info_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/test/src/domain/entities/installment_info_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/accounts/test/src/domain/usecases/mark_as_paid_usecase_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/accounts/test/src/domain/usecases/mark_as_paid_usecase_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/lib/core.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/core.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/lib/src/data/data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/data/data.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/lib/src/data/infrastructure/either/either_infrastructure.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/data/infrastructure/either/either_infrastructure.freezed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/lib/src/data/infrastructure/failure/custom_failure.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/data/infrastructure/failure/custom_failure.freezed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/lib/src/data/infrastructure/infrastructure.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/data/infrastructure/infrastructure.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/lib/src/domain/domain.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/src/domain/domain.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/core/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/dependencies/lib/dependencies.dart" beforeDir="false" afterPath="$PROJECT_DIR$/packages/dependencies/lib/dependencies.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/dependencies/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/packages/dependencies/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,37 +106,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Flutter Test.AppColors.executor": "Run",
-    "Flutter Test.CreateAccountUseCase.executor": "Run",
-    "Flutter Test.deve criar uma conta v\\u00e1lida com os valores obrigat\\u00f3rios.executor": "Run",
-    "Flutter Test.should create account and return Right(void) when successful.executor": "Run",
-    "Flutter Test.should create with null values by default.executor": "Run",
-    "Flutter Test.should have all fields null by default.executor": "Run",
-    "Flutter Test.tests in account_test.dart.executor": "Run",
-    "Flutter Test.tests in create_account_usecase_test.dart.executor": "Coverage",
-    "Flutter Test.tests in test.executor": "Run",
-    "Flutter.Flutter Run -> 'finances'.executor": "Debug",
-    "Flutter.main.dart.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "io.flutter.reload.alreadyRun": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/gustavooliveira/development/contabilidade/packages/core",
-    "settings.editor.selected.configurable": "flutter.settings",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flutter Test.AppColors.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.CreateAccountUseCase.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.deve criar uma conta v\\u00e1lida com os valores obrigat\\u00f3rios.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should create account and return Right(void) when successful.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should create with null values by default.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.should have all fields null by default.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.tests in account_test.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter Test.tests in create_account_usecase_test.dart.executor&quot;: &quot;Coverage&quot;,
+    &quot;Flutter Test.tests in test.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.Flutter Run -&gt; 'finances'.executor&quot;: &quot;Debug&quot;,
+    &quot;Flutter.main.dart.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gustavooliveira/development/contabilidade/packages/core&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;flutter.settings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/core/lib/src/data/infrastructure/storage" />
       <recent name="$PROJECT_DIR$/packages/design_system/lib" />
     </key>
   </component>
@@ -155,23 +211,20 @@
       <option name="presentableId" value="Default" />
       <updated>1749302123830</updated>
     </task>
+    <task id="LOCAL-00001" summary="feature: widgets style done and some adjusts">
+      <option name="closed" value="true" />
+      <created>1752118785953</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752118785953</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/packages/accounts/test/src/domain/entities/account_filter_test.dart</url>
-          <line>6</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/packages/accounts/test/src/domain/entities/account_filter_test.dart</url>
-          <line>8</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feature: widgets style done and some adjusts" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: widgets style done and some adjusts" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="../../../../development/contabilidade/packages/accounts/coverage/lcov.info" NAME="tests in create_account_usecase_test.dart Coverage Results" MODIFIED="1751956462868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="FlutterCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

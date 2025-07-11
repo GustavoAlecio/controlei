@@ -8,3 +8,5 @@ dependency_overrides:
     path: ../../packages/dependencies
   design_system:
     path: ../../packages/design_system
+  local_storage:
+    path: ../../packages/local_storage

@@ -10,12 +10,16 @@ dependencies:
   flutter:
     sdk: flutter
 
+  core:
+    path: ../../packages/core
   design_system:
     path: ../../packages/design_system
   dependencies:
     path: ../../packages/dependencies
   accounts:
     path: ../../packages/accounts
+  local_storage:
+    path: ../../packages/local_storage
 
 dev_dependencies:
   flutter_test:

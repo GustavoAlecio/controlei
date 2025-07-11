@@ -5,12 +5,11 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i3;
 
-import 'package:accounts/src/domain/entities/entities.dart' as _i5;
 import 'package:accounts/src/domain/repositories/account_repository.dart'
     as _i2;
 import 'package:core/core.dart' as _i4;
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:mockito/src/dummies.dart' as _i6;
+import 'package:mockito/src/dummies.dart' as _i5;
 
 // ignore_for_file: type=lint
 // ignore_for_file: avoid_redundant_argument_values
@@ -35,22 +34,22 @@ class MockIAccountRepository extends _i1.Mock
   }
 
   @override
-  _i3.Future<_i4.Either<_i4.Failure, List<_i5.Account>>> getAll() =>
+  _i3.Future<_i4.Either<_i4.Failure, List<_i4.Account>>> getAll() =>
       (super.noSuchMethod(
         Invocation.method(
           #getAll,
           [],
         ),
         returnValue:
-            _i3.Future<_i4.Either<_i4.Failure, List<_i5.Account>>>.value(
-                _i6.dummyValue<_i4.Either<_i4.Failure, List<_i5.Account>>>(
+            _i3.Future<_i4.Either<_i4.Failure, List<_i4.Account>>>.value(
+                _i5.dummyValue<_i4.Either<_i4.Failure, List<_i4.Account>>>(
           this,
           Invocation.method(
             #getAll,
             [],
           ),
         )),
-      ) as _i3.Future<_i4.Either<_i4.Failure, List<_i5.Account>>>);
+      ) as _i3.Future<_i4.Either<_i4.Failure, List<_i4.Account>>>);
 
   @override
   _i3.Future<_i4.Either<_i4.Failure, List<String>>> getCategories() =>
@@ -60,7 +59,7 @@ class MockIAccountRepository extends _i1.Mock
           [],
         ),
         returnValue: _i3.Future<_i4.Either<_i4.Failure, List<String>>>.value(
-            _i6.dummyValue<_i4.Either<_i4.Failure, List<String>>>(
+            _i5.dummyValue<_i4.Either<_i4.Failure, List<String>>>(
           this,
           Invocation.method(
             #getCategories,
@@ -70,34 +69,34 @@ class MockIAccountRepository extends _i1.Mock
       ) as _i3.Future<_i4.Either<_i4.Failure, List<String>>>);
 
   @override
-  _i3.Future<_i4.Either<_i4.Failure, List<_i5.Account>>> getAccountsByFilter(
-          _i5.AccountFilter? filter) =>
+  _i3.Future<_i4.Either<_i4.Failure, List<_i4.Account>>> getAccountsByFilter(
+          _i4.AccountFilter? filter) =>
       (super.noSuchMethod(
         Invocation.method(
           #getAccountsByFilter,
           [filter],
         ),
         returnValue:
-            _i3.Future<_i4.Either<_i4.Failure, List<_i5.Account>>>.value(
-                _i6.dummyValue<_i4.Either<_i4.Failure, List<_i5.Account>>>(
+            _i3.Future<_i4.Either<_i4.Failure, List<_i4.Account>>>.value(
+                _i5.dummyValue<_i4.Either<_i4.Failure, List<_i4.Account>>>(
           this,
           Invocation.method(
             #getAccountsByFilter,
             [filter],
           ),
         )),
-      ) as _i3.Future<_i4.Either<_i4.Failure, List<_i5.Account>>>);
+      ) as _i3.Future<_i4.Either<_i4.Failure, List<_i4.Account>>>);
 
   @override
   _i3.Future<_i4.Either<_i4.Failure, void>> createAccount(
-          _i5.Account? account) =>
+          _i4.Account? account) =>
       (super.noSuchMethod(
         Invocation.method(
           #createAccount,
           [account],
         ),
         returnValue: _i3.Future<_i4.Either<_i4.Failure, void>>.value(
-            _i6.dummyValue<_i4.Either<_i4.Failure, void>>(
+            _i5.dummyValue<_i4.Either<_i4.Failure, void>>(
           this,
           Invocation.method(
             #createAccount,
@@ -108,14 +107,14 @@ class MockIAccountRepository extends _i1.Mock
 
   @override
   _i3.Future<_i4.Either<_i4.Failure, void>> updateAccount(
-          _i5.Account? account) =>
+          _i4.Account? account) =>
       (super.noSuchMethod(
         Invocation.method(
           #updateAccount,
           [account],
         ),
         returnValue: _i3.Future<_i4.Either<_i4.Failure, void>>.value(
-            _i6.dummyValue<_i4.Either<_i4.Failure, void>>(
+            _i5.dummyValue<_i4.Either<_i4.Failure, void>>(
           this,
           Invocation.method(
             #updateAccount,
@@ -132,7 +131,7 @@ class MockIAccountRepository extends _i1.Mock
           [id],
         ),
         returnValue: _i3.Future<_i4.Either<_i4.Failure, void>>.value(
-            _i6.dummyValue<_i4.Either<_i4.Failure, void>>(
+            _i5.dummyValue<_i4.Either<_i4.Failure, void>>(
           this,
           Invocation.method(
             #deleteAccount,
@@ -142,19 +141,19 @@ class MockIAccountRepository extends _i1.Mock
       ) as _i3.Future<_i4.Either<_i4.Failure, void>>);
 
   @override
-  _i3.Future<_i4.Either<_i4.Failure, void>> markAsPaid(String? id) =>
+  _i3.Future<_i4.Either<_i4.Failure, _i4.Account>> markAsPaid(String? id) =>
       (super.noSuchMethod(
         Invocation.method(
           #markAsPaid,
           [id],
         ),
-        returnValue: _i3.Future<_i4.Either<_i4.Failure, void>>.value(
-            _i6.dummyValue<_i4.Either<_i4.Failure, void>>(
+        returnValue: _i3.Future<_i4.Either<_i4.Failure, _i4.Account>>.value(
+            _i5.dummyValue<_i4.Either<_i4.Failure, _i4.Account>>(
           this,
           Invocation.method(
             #markAsPaid,
             [id],
           ),
         )),
-      ) as _i3.Future<_i4.Either<_i4.Failure, void>>);
+      ) as _i3.Future<_i4.Either<_i4.Failure, _i4.Account>>);
 }

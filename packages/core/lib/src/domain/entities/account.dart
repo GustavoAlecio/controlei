@@ -1,8 +1,6 @@
 import 'package:core/core.dart';
 import 'package:dependencies/dependencies.dart';
 
-import './enums/enums.dart';
-import 'installment_info.dart';
 
 part 'account.freezed.dart';
 

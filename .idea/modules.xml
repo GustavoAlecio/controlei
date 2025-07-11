@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/packages/dependencies/melos_dependencies.iml" filepath="$PROJECT_DIR$/packages/dependencies/melos_dependencies.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/design_system/melos_design_system.iml" filepath="$PROJECT_DIR$/packages/design_system/melos_design_system.iml" />
       <module fileurl="file://$PROJECT_DIR$/apps/finances/melos_finances.iml" filepath="$PROJECT_DIR$/apps/finances/melos_finances.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/local_storage/melos_local_storage.iml" filepath="$PROJECT_DIR$/packages/local_storage/melos_local_storage.iml" />
       <module fileurl="file://$PROJECT_DIR$/melos_controlei.iml" filepath="$PROJECT_DIR$/melos_controlei.iml" />
     </modules>
   </component>

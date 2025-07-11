@@ -17,11 +17,13 @@ void main() {
   });
 
   group('MarkAsPaidUseCase', () {
+    final account = Account(dueDate: DateTime(2025, 7, 1));
+
     const id = 'abc';
 
     test('should mark account as paid successfully', () async {
       when(mockRepository.markAsPaid(id))
-          .thenAnswer((_) async => const Right(null));
+          .thenAnswer((_) async => Right(account));
 
       final result = await useCase(id);
 

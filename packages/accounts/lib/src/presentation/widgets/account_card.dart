@@ -1,5 +1,5 @@
+import 'package:core/core.dart';
 import 'package:flutter/material.dart';
-import 'package:accounts/accounts.dart';
 
 class AccountCard extends StatelessWidget {
   final Account account;

@@ -1,6 +1,6 @@
+import 'package:core/core.dart';
 import 'package:dependencies/dependencies.dart';
 
-import '../../domain/domain.dart';
 
 part 'account_state.freezed.dart';
 

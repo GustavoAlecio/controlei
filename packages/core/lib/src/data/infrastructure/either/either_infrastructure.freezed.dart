@@ -35,9 +35,6 @@ class _$EitherCopyWithImpl<L, R, $Res, $Val extends Either<L, R>>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
-
-  /// Create a copy of Either
-  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -57,8 +54,6 @@ class __$$LeftImplCopyWithImpl<L, R, $Res>
       _$LeftImpl<L, R> _value, $Res Function(_$LeftImpl<L, R>) _then)
       : super(_value, _then);
 
-  /// Create a copy of Either
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -98,9 +93,7 @@ class _$LeftImpl<L, R> extends Left<L, R> {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(value));
 
-  /// Create a copy of Either
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$LeftImplCopyWith<L, R, _$LeftImpl<L, R>> get copyWith =>
@@ -113,10 +106,7 @@ abstract class Left<L, R> extends Either<L, R> {
 
   @override
   L get value;
-
-  /// Create a copy of Either
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$LeftImplCopyWith<L, R, _$LeftImpl<L, R>> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -138,8 +128,6 @@ class __$$RightImplCopyWithImpl<L, R, $Res>
       _$RightImpl<L, R> _value, $Res Function(_$RightImpl<L, R>) _then)
       : super(_value, _then);
 
-  /// Create a copy of Either
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -179,9 +167,7 @@ class _$RightImpl<L, R> extends Right<L, R> {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(value));
 
-  /// Create a copy of Either
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$RightImplCopyWith<L, R, _$RightImpl<L, R>> get copyWith =>
@@ -194,10 +180,7 @@ abstract class Right<L, R> extends Either<L, R> {
 
   @override
   R get value;
-
-  /// Create a copy of Either
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$RightImplCopyWith<L, R, _$RightImpl<L, R>> get copyWith =>
       throw _privateConstructorUsedError;
 }

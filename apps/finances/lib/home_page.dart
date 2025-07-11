@@ -1,6 +1,7 @@
 import 'package:accounts/accounts.dart';
 import 'package:dependencies/dependencies.dart';
 import 'package:flutter/material.dart';
+import 'package:core/core.dart';
 
 class HomePage extends ConsumerStatefulWidget {
   const HomePage({super.key});

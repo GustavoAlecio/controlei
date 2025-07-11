@@ -21,9 +21,7 @@ mixin _$AccountFilter {
   DateTime? get month => throw _privateConstructorUsedError;
   String? get category => throw _privateConstructorUsedError;
 
-  /// Create a copy of AccountFilter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $AccountFilterCopyWith<AccountFilter> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -51,8 +49,6 @@ class _$AccountFilterCopyWithImpl<$Res, $Val extends AccountFilter>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of AccountFilter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -105,8 +101,6 @@ class __$$AccountFilterImplCopyWithImpl<$Res>
       _$AccountFilterImpl _value, $Res Function(_$AccountFilterImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of AccountFilter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -171,9 +165,7 @@ class _$AccountFilterImpl extends _AccountFilter {
   @override
   int get hashCode => Object.hash(runtimeType, type, status, month, category);
 
-  /// Create a copy of AccountFilter
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$AccountFilterImplCopyWith<_$AccountFilterImpl> get copyWith =>
@@ -196,11 +188,8 @@ abstract class _AccountFilter extends AccountFilter {
   DateTime? get month;
   @override
   String? get category;
-
-  /// Create a copy of AccountFilter
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$AccountFilterImplCopyWith<_$AccountFilterImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

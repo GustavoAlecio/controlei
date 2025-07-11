@@ -1,6 +1,5 @@
 import 'package:core/core.dart';
 
-import '../entities/entities.dart';
 import '../repositories/account_repository.dart';
 
 abstract interface class IMarkAsPaidUseCase {
